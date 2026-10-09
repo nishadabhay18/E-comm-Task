@@ -26,7 +26,7 @@ function ProductForm({ fetchProducts }) {
             const token = localStorage.getItem("accessToken")
 
             const response = await axios.post(
-                `${import.meta.env.VITE_API_URL}/products`,
+                `${import.meta.env.VITE_API_URL}/api/products`,
                 form,
                 {
                     headers: {
